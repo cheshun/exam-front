@@ -1,0 +1,123 @@
+/*{
+	success:true,
+	data:[
+		{superid:1,supertext:'信息管理',id:1,subtext:'院系管理'},
+		{superid:1,supertext:'信息管理',id:2,subtext:'教师管理'},
+		{superid:1,supertext:'信息管理',id:3,subtext:'学生管理'},
+		{superid:1,supertext:'信息管理',id:4,subtext:'机房IP管理'},
+		{superid:1,supertext:'信息管理',id:5,subtext:'课程管理'},
+		{superid:1,supertext:'信息管理',id:6,subtext:'个人信息'},
+
+		{superid:2,supertext:'试卷管理',id:6,subtext:'组建试卷'},
+		{superid:2,supertext:'试卷管理',id:6,subtext:'智能出卷'},
+		{superid:2,supertext:'试卷管理',id:6,subtext:'在线出卷'},
+		{superid:2,supertext:'试卷管理',id:6,subtext:'试卷列表'},
+		{superid:2,supertext:'试卷管理',id:6,subtext:'批阅试卷'},
+
+		{superid:2,supertext:'题库管理',id:6,subtext:'新建题目'},
+		{superid:2,supertext:'题库管理',id:6,subtext:'题目列表'},
+		{superid:2,supertext:'题库管理',id:6,subtext:'题型管理'},
+
+		{superid:2,supertext:'实时监控',id:6,subtext:'考试监控'},	
+		{superid:2,supertext:'实时监控',id:6,subtext:'强制注销'}	
+	]
+
+}*/
+
+
+
+{
+	success: true,
+	msg: "ok",
+
+	children: [{
+		text: "信息管理",
+		id: 1,
+		expanded: true,
+		children: [{
+			id: 11,
+			text: '院系管理',
+			leaf: true
+		}, {
+			id: 12,
+			text: '教师管理',
+			leaf: true
+		}, {
+			id: 13,
+			text: '学生管理',
+			leaf: true
+		}, {
+			id: 14,
+			text: '机房IP管理',
+			leaf: true
+		}, {
+			id: 15,
+			text: '课程管理',
+			leaf: true
+		}, {
+			id: 16,
+			text: '个人信息',
+			leaf: true
+		}]
+	}, {
+		text: '试卷管理',
+		id: 2,
+		children: [{
+			id: 21,
+			text: '组建试卷',
+			leaf: true
+		}, {
+			id: 22,
+			text: '智能出卷',
+			leaf: true
+		}, {
+			id: 23,
+			text: '在线出卷',
+			leaf: true
+		}, {
+			id: 24,
+			text: '试卷列表',
+			leaf: true
+		}, {
+			id: 25,
+			text: '批阅试卷',
+			leaf: true
+		}]
+	}, {
+		text: "题库管理",
+		id: 3,
+		children: [{
+			id: 31,
+			text: '新建题目',
+			leaf: true
+		}, {
+			id: 32,
+			text: '题目列表',
+			leaf: true
+		}]
+	}, {
+		text: '考试管理',
+		id: 5,
+		children: [{
+			id: 51,
+			text: '新建考试',
+			leaf: true
+		}, {
+			id: 52,
+			text: '考试列表',
+			leaf: true
+		}]
+	}, {
+		text: "实时监控",
+		id: 4,
+		children: [{
+			id: 41,
+			text: '考试监控',
+			leaf: true
+		}, {
+			id: 42,
+			text: '强制注销',
+			leaf: true
+		}]
+	}]
+}

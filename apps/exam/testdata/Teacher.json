@@ -1,0 +1,9 @@
+{
+	success:true,
+	msg:"",	
+	total:222,
+	data:[
+		{id:"jackiezhangjie",name:'张杰',collegeid:11,college:"计算机",courses:[{id:22,name:'网络编程'},{id:1,name:'高等数学'}]},
+		{id:"lixiaoliu",name:'李晓牛',collegeid:11,college:"计算机",courses:[{id:22,name:'网络编程'},{id:1,name:'高等数学'}]}		 
+	]
+}

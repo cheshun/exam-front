@@ -1,0 +1,229 @@
+/*@app global*/
+body{
+	font-family:"Microsoft Yahei",simson;
+}
+ul, ol{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a{text-decoration:none;color:#666}
+/*@view module,name Banner*/
+.mod-banner{
+	padding: 10px;
+	background-image: none;
+	background-color: #363F49;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3D4752), color-stop(100%, #101922));
+	background-image: -moz-linear-gradient(top, #3D4752,#2D353D);
+	background-image: -o-linear-gradient(top, #3D4752,#2D353D);
+	background-image: linear-gradient(top, #3D4752,#2D353D);
+	color: white;
+	font-size: 16px;
+	font-weight: bold;	 
+	text-shadow: 0 1px 0 #16191D;
+	border-bottom: 1px solid #16191D !important;
+
+}
+.mod-banner .content-ele-banner{
+	position:relative;
+}
+.mod-banner .content-ele-banner .user-info{
+	position:absolute;
+    top:32px;
+    right:0px;
+	font-size:12px;
+	font-weight:normal;	 
+}
+.mod-banner .content-ele-banner .user-info span{
+	margin-right:20px;
+}
+.mod-banner .content-ele-banner .user-info a{
+	color:#fff;
+	text-decoration:none;
+}
+.mod-banner .content-ele-banner .user-info .logout:hover{
+	color:yellow;
+}
+
+/*@component view of topic item*/
+.topic-item {
+	font-size:12px;
+	background:#EFEFEF;
+	margin:4px 12px;
+	border-radius:8px;
+}
+.topic-item:hover {
+	background:#ddd;
+}
+.topic-item-header {
+	position:relative;
+	height:2px;
+}
+.topic-item-id {
+	position:absolute;
+	left:12px;
+	top:8px;
+}
+.topic-item-operation {
+	position:absolute;
+	right:16px;
+	top:8px;
+}
+.topic-item-edit,.topic-item-delete {
+	cursor:pointer;	
+}
+.topic-item-edit {
+	margin-right:16px;
+}
+.topic-item-edit:hover{
+	color:green;
+}
+.topic-item-delete:hover{
+	color:red;
+}
+.topic-item-body {
+	padding:12px 120px 0px 36px;
+}
+
+.topic-item-options {
+	padding:6px  16px;
+}
+.topic-item-options li {
+	margin-bottom:2px;
+}
+.topic-item-options li label {
+	margin-right:4px;
+}
+.topic-item-footer {
+	position:relative;
+	padding:0 0 6px 36px;
+	height:16px;
+}
+.topic-item-msg-rating {
+	margin-left:20px;
+}
+.add-to-a4 {
+	position:absolute;
+	right:16px;
+	padding:4px;
+	background:#ddd;
+	cursor:pointer;
+	top:-60px;
+}
+.added-to-a4{
+	position:absolute;
+	right:16px;
+	padding:4px;
+	background:#ddd;
+	cursor:pointer;
+	top:-60px;
+	color:red;
+}
+.add-to-a4:hover {
+	background:orange;
+	font-weight:bold;
+}
+/**
+ * 查看试卷，模仿购物车
+ */
+#scanPaperWrapper{
+position: fixed;
+position/*\**/:absolute\9;/*IE8*/
+bottom: 28px;
+bottom/*\**/: 0px\9;
+right: 30px;
+z-index: 999999; height:52px;overflow:hidden}
+#scanPaper{
+	width: 100px;
+	height: 60px;
+	background-color: #FFB515;
+	padding:0 8px;
+	border-radius:8px;
+
+	color: #FEF4E9;
+	border: solid 1px #DA7C0C;
+	background: #F78D1D;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FAA51A), to(#F47A20));
+	background: -moz-linear-gradient(top, #FAA51A, #F47A20);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#faa51a", endColorstr="#f47a20");	
+	zoom: 1;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2); 
+}
+#scanPaper:hover{
+	background: #F47C20;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F88E11), to(#F06015));
+	background: -moz-linear-gradient(top, #F88E11, #F06015);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f88e11", endColorstr="#f06015");
+}
+#scanPaper .a4-header{
+	height:30px;
+	border-bottom:1px solid #ddd;
+}
+#scanPaper .a4-header a{
+	line-height:30px;
+	float:left;
+	height:100%;
+	width:100%;
+	text-decoration:none;
+	color:#FEF4E9;
+}
+#scanPaper .a4-header a:hover{
+	color:#111;
+}
+#scanPaper .a4-content{
+	color:#ddd;
+	height:16px;
+	padding:4px;
+}
+#scanPaper .a4-content span:hover{
+	color:red;
+}
+#scanPaper .a4-footer{
+	position:relative;
+	height:16px;
+}
+#scanPaper .a4-footer .a4-delete{
+	position:absolute;
+	right:0px;
+	top:-12px;
+	font-size:10px;
+	-webkit-text-size-adjust:none;
+	color:#a66c00;
+	text-align:center;
+	line-height:16px;
+	text-decoration:none;
+	width:16px;
+	height:16px;
+	border-radius:8px;
+	background:#bf8d30;
+}
+#scanPaper .a4-footer .a4-delete:hover{
+	color:red;
+	background:#fff;
+	text-shadow:0 0 0 transparent, 0 1px 1px #FF0;
+}
+ /**
+  * grid actioncolumn margin
+  */
+ .grid-icon-gap{
+ 	margin-right:12px;
+ }
+
+ /**
+  * override class 
+  */
+ .x-tab-active button{
+ 	color:#49361A !important;
+ }
